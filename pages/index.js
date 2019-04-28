@@ -1,7 +1,7 @@
-import React from 'react'
-import Link from 'next/link'
-import Head from '../components/head'
-import Nav from '../components/nav'
+import React from "react";
+import Link from "next/link";
+import Head from "../components/head";
+import Nav from "../components/nav";
 
 const Home = () => (
   <div>
@@ -13,6 +13,9 @@ const Home = () => (
       <p className="description">
         To get started, edit <code>pages/index.js</code> and save to reload.
       </p>
+      <Link href={{ port: "/sample", query: "3" }}>
+        <a>sample</a>
+      </Link>
 
       <div className="row">
         <Link href="https://github.com/zeit/next.js#getting-started">
@@ -25,7 +28,7 @@ const Home = () => (
           <a className="card">
             <h3>Examples &rarr;</h3>
             <p>
-              Find other example boilerplates on the{' '}
+              Find other example boilerplates on the{" "}
               <code>create-next-app</code> site
             </p>
           </a>
@@ -86,6 +89,6 @@ const Home = () => (
       }
     `}</style>
   </div>
-)
+);
 
-export default Home
+export default Home;
