@@ -13,7 +13,7 @@ const Home = () => (
       <p className="description">
         To get started, edit <code>pages/index.js</code> and save to reload.
       </p>
-      <Link href={{ port: "/sample", query: "3" }}>
+      <Link href="/sample">
         <a>sample</a>
       </Link>
 

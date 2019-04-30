@@ -4,9 +4,8 @@ import gql from "graphql-tag";
 
 const GET_DOGS = gql`
   {
-    getUsers {
-      userName
-      email
+    users {
+      displayName
     }
   }
 `;
@@ -17,7 +16,7 @@ const Sample = props => {
     <div>loading...</div>
   ) : (
     <ul>
-      {data.getUsers.map((user, id) => (
+      {data.users.map((user, id) => (
         <li key={id}>{user.userName}</li>
       ))}
     </ul>
